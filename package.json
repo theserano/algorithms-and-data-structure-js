@@ -1,0 +1,12 @@
+{
+  "name": "algorithms_and_data_structures",
+  "version": "1.0.0",
+  "description": "Understanding various algorithms with javascript",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
