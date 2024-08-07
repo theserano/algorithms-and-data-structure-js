@@ -3,6 +3,9 @@ import { fibonacci } from "./fibonacci.js";
 import { isPowerOfTwo } from "./powerOfTwo.js";
 import { primeNumber } from "./prime_numbers.js";
 import { recursiveFactorial, recursiveFibonacci } from "./recursion.js";
+import { LinearSearch } from "./linear_search.js";
+import { BinarySearch, RecursiveBinarySearch } from "./binary_search.js";
+import { InsertionSort, MergeSort, QuickSort } from "./sorting.js";
 
 
 // fibonacci algorithm
@@ -32,6 +35,27 @@ import { recursiveFactorial, recursiveFibonacci } from "./recursion.js";
 // console.log(recursiveFibonacci(6)); //8
 
 // recursive factorial
-console.log(recursiveFactorial(0)); // 1
-console.log(recursiveFactorial(1)); // 1
-console.log(recursiveFactorial(5)); // 120
+// console.log(recursiveFactorial(0)); // 1
+// console.log(recursiveFactorial(1)); // 1
+// console.log(recursiveFactorial(5)); // 120
+
+// linear search algorithm
+// console.log(LinearSearch([-5, 2, 10, 4, 6], 10)); // 2
+// console.log(LinearSearch([-5, 2, 10, 4, 6], 6)); // 4
+// console.log(LinearSearch([-5, 2, 10, 4, 6], 20)); // -1
+
+// Binary search algorithm
+// console.log(BinarySearch([-5, 2, 4, 6, 10], 10)); // 4
+// console.log(BinarySearch([-5, 2, 4, 6, 10], 6)); // 3
+// console.log(BinarySearch([-5, 2, 4, 6, 10], 20)); // -1
+
+// Recursive Binary search algorithm
+// console.log(RecursiveBinarySearch([-5, 2, 4, 6, 10], 10)); // 4
+// console.log(RecursiveBinarySearch([-5, 2, 4, 6, 10], 6)); // 3
+// console.log(RecursiveBinarySearch([-5, 2, 4, 6, 10], 20)); // -1
+
+// insertion sort algorithm
+const array = [8, 20, -2, 4, -6];
+// console.log(InsertionSort(array)); //[-6, -2, 4, 8, 20]
+// console.log(QuickSort(array));  //[-6, -2, 4, 8, 20]
+console.log(MergeSort(array));  //[-6, -2, 4, 8, 20]
